@@ -18,4 +18,11 @@ from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path('login/', admin.site.urls),
+    # path('signin/', admin.site.urls),
+    # path('signout/', admin.site.urls),
+    # path('products/', admin.site.urls),
+    # path('shops/', admin.site.urls),
+    # path('orders/', admin.site.urls),
+    
 ]

@@ -23,9 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-wd0v4q9kb#%ug+r2hh+*$b$an(tv2v$fa694b=lfkz9(s_o$n8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# DEBUG = True
-DEBUG = False
-
+DEBUG = True
+# DEBUG = False
 ALLOWED_HOSTS = ['*']
 
 
@@ -38,6 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # my apps 
+    'customuser',
+    'shop',
+    'shopkeeper',
+    'order',
+    'product',
+    'cart',
+    'timestamp',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +130,9 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+AUTH_USER_MODEL = 'customuser.CustomUser'
+
+
+
+
+

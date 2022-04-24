@@ -1,13 +1,17 @@
 pip freeze > .\requirements.txt
 django-admin startapp
 
+virtualenv --python=python3.8 env/place/you/want/to/save/to
 
 
+virtualenv --python=python3.10.2 venv
+sudo apt-get install python3.10.2
 
 
-
-
-
+python manage.py runserver
+python manage.py migrate
+python manage.py makemigrations
+python manage.py createsuperuser
 
 
 
